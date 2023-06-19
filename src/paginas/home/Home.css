@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+
+
+.caixa {
+    background-color: #f3e8e2ff;
+  }
+  
+  .titulo {
+    font-size: 40px !important;
+    text-align: center;
+    color: #090c02ff !important;
+    font-weight: bold !important;
+    font-family: 'Anton', sans-serif !important;
+  }
+  
+  .sub {
+
+    font-size: 40px;
+    text-align: center;
+    color: #090c02ff !important;
+    font-weight: bold !important;
+   
+}
+
+
+  .botao {
+    border-color: white !important;
+    background-color: #3f51b5;
+    color: white !important;
+  }
+  
+  .postagens {
+    background-color: white;
+  }
