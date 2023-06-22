@@ -1,11 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 .box1 {
   background-color: #d73340ff;
-  height: 120px;
+  height: 100px;
 }
 
 .box2 {
   background-color: #525e66ff;
-  height: 60px;
+  height: 70px;
 }
 
 .redes {
@@ -15,4 +17,5 @@
 
 .textos {
   color: white;
+  font-family: 'Bebas Neue', sans-serif !important;
 }

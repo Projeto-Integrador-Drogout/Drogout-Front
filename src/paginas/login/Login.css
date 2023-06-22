@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
 .text-decorator-none{
     text-decoration: none;
 }
@@ -6,5 +8,22 @@
     background: #d73340ff !important;
     color: white !important;
     border: 2px solid white !important;
+    font-weight: bold !important;
+    font-size: 15px !important;
 }
 
+.bem-vinde {
+    font-family: 'Anton', sans-serif !important;
+}
+
+.link1 {
+    color: #d73340ff;
+}
+
+a.link1:hover {
+    color: #7e7e7e;
+}
+
+.textos1 {
+    font-weight: bold !important;
+}

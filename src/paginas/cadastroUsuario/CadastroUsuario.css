@@ -13,4 +13,11 @@
 
 .btnCancelar{
     margin-right: 20px !important;
+    background: red !important;
+    color: white !important;
+}
+
+.btnCadastrar {
+    background: rgb(0, 0, 105) !important;
+    color: white !important;
 }

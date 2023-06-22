@@ -30,7 +30,7 @@ function Contato() {
                 
               <a
                 href="https://www.instagram.com/generationbrasil/"
-                target="_blank"
+                target="_blank" className="contatos"
               >
                     Instagram da Generation
               </a>
@@ -42,10 +42,8 @@ function Contato() {
           </Box>
         </Grid>
         <Grid item xs={6}>
-          <img
-            src="https://i.imgur.com/H88yIo2.png"
-            alt=""
-            width="500px"
+        <img
+            src="/src/assets/images/logo.png"
             height="500px"
           />
         </Grid>

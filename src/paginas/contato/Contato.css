@@ -5,3 +5,12 @@
 a {
   text-decoration: none;
 }
+
+.contatos {
+  color: #d73340ff;
+  font-weight: bold;
+}
+
+a.contatos:hover {
+  color: #7e7e7e;
+}

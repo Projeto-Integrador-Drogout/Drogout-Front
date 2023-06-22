@@ -56,9 +56,8 @@ function footer() {
           <Box className="box2">
             <Box paddingTop={1}>
               <Typography
-                variant="subtitle2"
+                variant="subtitle1"
                 align="center"
-                gutterBottom
                 className="textos"
               >
                 © 2020 Copyright:
@@ -67,7 +66,7 @@ function footer() {
             <Box>
               <a target="_blank" href="https://brasil.generation.org">
                 <Typography
-                  variant="subtitle2"
+                  variant="subtitle1"
                   gutterBottom
                   className="textos"
                   align="center"

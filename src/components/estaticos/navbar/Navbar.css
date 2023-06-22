@@ -16,6 +16,7 @@
 .logo {
   height: 100px;
   padding: 10px 40px 10px 10px;
+  filter: invert(100%);
 }
 
 .nav-links {
