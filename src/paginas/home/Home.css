@@ -4,6 +4,7 @@
 
 .caixa {
     background-color: #f3e8e2ff;
+    padding: 20px;
   }
   
   .titulo {
@@ -12,6 +13,7 @@
     color: #090c02ff !important;
     font-weight: bold !important;
     font-family: 'Anton', sans-serif !important;
+    text-transform: uppercase;
   }
   
   .sub {
@@ -26,7 +28,7 @@
 
   .botao {
     border-color: white !important;
-    background-color: #3f51b5;
+    background-color: #d73340ff !important;
     color: white !important;
   }
   

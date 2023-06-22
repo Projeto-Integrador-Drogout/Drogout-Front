@@ -5,6 +5,8 @@ import "./App.css";
 import Home from "./paginas/home/Home";
 import Sobre from "./paginas/sobre/Sobre";
 import Contato from "./paginas/contato/Contato";
+import Login from "./paginas/login/Login";
+import CadastroUsuario from "./paginas/cadastroUsuario/CadastroUsuario";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
@@ -16,12 +18,12 @@ function App() {
           <Routes>
             {" "}
             // Antigo Switch
-            {/* <Route path="/" element={<Login />} />
-          <Route path="/login" element={<Login />} /> */}
+            <Route path="/" element={<Login />} />
+            <Route path="/login" element={<Login />} />
             <Route path="/home" element={<Home />} />
             <Route path="/contato" element={<Contato />} />
             <Route path="/sobre" element={<Sobre />} />
-            {/*<Route path="/cadastro" element={<CadastroUsuario />} /> */}
+            <Route path="/cadastro" element={<CadastroUsuario />} />
           </Routes>
         </div>
         <Footer />

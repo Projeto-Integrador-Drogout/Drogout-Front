@@ -1,0 +1,10 @@
+.text-decorator-none{
+    text-decoration: none;
+}
+
+.botao-logar {
+    background: #d73340ff !important;
+    color: white !important;
+    border: 2px solid white !important;
+}
+

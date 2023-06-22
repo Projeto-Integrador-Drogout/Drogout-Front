@@ -29,7 +29,7 @@ function footer() {
                 gutterBottom
                 className="textos"
               >
-                Siga-nos nas redes sociais{" "}
+                Siga-nos nas redes sociais
               </Typography>
             </Box>
             <Box display="flex" alignItems="center" justifyContent="center">
