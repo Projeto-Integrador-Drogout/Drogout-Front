@@ -8,53 +8,46 @@ import Contato from "./paginas/contato/Contato";
 import Login from "./paginas/login/Login";
 import CadastroUsuario from "./paginas/cadastroUsuario/CadastroUsuario";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import ListaTema from "./components/temas/listaTema/ListaTema";
+import ListaPostagem from "./components/postagens/listapostagem/ListaPostagem";
+import CadastroPost from "./components/postagens/cadastroPost/CadastroPost";
+import CadastroTema from "./components/temas/cadastroTema/CadastroTema";
+import DeletarPostagem from "./components/postagens/deletarPostagem/DeletarPostagem";
+import DeletarTema from "./components/temas/deletarTema/DeletarTema";
+import { Provider } from "react-redux";
+import store from './store/Store';
+
 
 function App() {
   return (
-    <>
+    <Provider store={store}>
       <BrowserRouter>
         <Navbar />
-        <div style={{ minHeight: "100vh" }}>
+       
+          <div style={{ minHeight: '100vh' }}>
           <Routes>
-            {" "}
-            // Antigo Switch
+
             <Route path="/" element={<Login />} />
             <Route path="/login" element={<Login />} />
-            <Route path="/home" element={<Home />} />
             <Route path="/contato" element={<Contato />} />
             <Route path="/sobre" element={<Sobre />} />
-            <Route path="/cadastro" element={<CadastroUsuario />} />
-          </Routes>
-        </div>
+            <Route path="/home" element={<Home />} />
+            <Route path="/cadastrousuario" element={<CadastroUsuario />} />
+            <Route path="/temas" element={<ListaTema />} />
+            <Route path="/posts" element={<ListaPostagem />} />
+            <Route path="/formularioPostagem" element={<CadastroPost />} />
+            <Route path="/formularioPostagem/:id" element={<CadastroPost />} />
+            <Route path="/formularioTema" element={<CadastroTema />} />
+            <Route path="/formularioTema/:id" element={<CadastroTema />} />
+            <Route path="/deletarPostagem/:id" element={<DeletarPostagem />} />
+            <Route path="/deletarTema/:id" element={<DeletarTema />} />
+            </Routes>
+          </div>
+      
         <Footer />
       </BrowserRouter>
-    </>
+    </Provider>
   );
 }
-export default App;
 
-{
-  /*<Grid container spacing={3}>
-        <Grid item xs={12} sm={12}>
-          <Home />
-        </Grid>
-        <Grid item xs={12} sm={6}>
-          <Home />
-        </Grid>
-        <Grid item xs={12} sm={6}>
-          <Home />
-        </Grid>
-        <Grid item xs={12} sm={3}>
-          <Home />
-        </Grid>
-        <Grid item xs={12} sm={3}>
-          <Home />
-        </Grid>
-        <Grid item xs={12} sm={3}>
-          <Home />
-        </Grid>
-        <Grid item xs={12} sm={3}>
-          <Home />
-        </Grid>
-  </Grid> */
-}
+export default App;

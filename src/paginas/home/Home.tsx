@@ -1,30 +1,26 @@
-import React, { useEffect } from 'react';
-import {Typography, Grid, Button} from '@material-ui/core';
-import {Box} from '@mui/material';
-import TabPostagem from '../../components/postagens/tabpostagem/TabPostagem';
-import ModalPostagem from '../../components/postagens/modalPostagem/ModalPostagem';
+/* eslint-disable prefer-const */
+import React, { useEffect } from "react";
+import { Typography, Grid, Button, Box } from "@material-ui/core";
+import "./Home.css";
 import { useNavigate } from 'react-router';
 import { useSelector } from 'react-redux';
-import { TokenState } from '../../store/tokens/tokensReducer';
-import { Link } from 'react-router-dom';
-import './home.css';
+import { TokenState } from '../../store/tokens/TokensReducer';
+
 
 function Home() {
-  const classes = useStyles();
 
   let navigate = useNavigate();
-  const token = useSelector<TokenState, TokenState["tokens"]>(
-    (state) => state.tokens
-  );
-
-  useEffect(() => {
-    if (token == "") {
-      alert("Você precisa estar logado")
-      navigate("/login")
-
-    }
+    const token = useSelector<TokenState, TokenState["tokens"]>(
+        (state) => state.tokens
+      );
+    
+    useEffect(() => {
+      if (token == "") {
+          alert("Você precisa estar logado")
+          navigate("/login")
+  
+      }
   }, [token])
-
   return (
     <>
       <Grid
@@ -82,10 +78,6 @@ export default Home;
 
 
 
-
-function useStyles() {
-  throw new Error("Function not implemented.");
-}
 /* <Grid container spacing={2}>
         <Grid item xs={12} sm={8}>
           <Paper style={{ height: "100vh", background: "lightgrey" }}></Paper>

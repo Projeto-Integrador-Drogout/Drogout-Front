@@ -1,3 +1,4 @@
+/* eslint-disable prefer-const */
 import React, { useState, useEffect, ChangeEvent } from 'react';
 import { Grid, Typography, TextField, Button } from '@material-ui/core';
 import { Box } from '@mui/material';
@@ -33,6 +34,7 @@ function Login() {
 
     useEffect(() => {
         if (token != '') {
+            dispatch(addToken(token));
             navigate('/home')
         }
     }, [token])
