@@ -1,10 +1,14 @@
 
-![Logo](https://cdn.discordapp.com/attachments/1087794407052419205/1124302635000942662/logo.png)
+![Logo](https://cdn.discordapp.com/attachments/1087794407052419205/1124311639454404650/logo_1.png)
 
 
 # DrogOut
 
 Abordamos neste projeto a ODS - Saúde e Bem-Estar, com foco em reforçar a prevenção e o tratamento do abuso de drogas entorpecestes e o uso nocivo do álcool.
+
+
+##  Habilidades
+Java, SpringBoot, Javascript, HTML, CSS, biblioteca React
 
 
 ## Autores
