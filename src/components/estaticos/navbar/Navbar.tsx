@@ -15,30 +15,40 @@ function navbar() {
           </Box>
 
           <Box display="flex" justifyContent="start">
+            <Link to="/home" className="text-decorator-none"> 
             <Box mx={1} className="cursor">
               <Typography className='nav-links' variant="h4" color="inherit">
                 home
               </Typography>
             </Box>
+            </Link>
+            <Link to="/posts" className="text-decorator-none"> 
             <Box mx={1} className="cursor">
               <Typography className='nav-links' variant="h4" color="inherit">
                 postagens
               </Typography>
             </Box>
+            </Link>
+
+            <Link to="/temas" className="text-decorator-none">
             <Box mx={1} className="cursor">
               <Typography className='nav-links' variant="h4" color="inherit">
                 temas
               </Typography>
             </Box>
+            </Link>
+
+            <Link to="/formularioTema" className="text-decorator-none"> 
             <Box mx={1} className="cursor">
               <Typography className='nav-links' variant="h4" color="inherit">
-                cadastrar tema
+                cadastro tema
               </Typography>
             </Box>
+            </Link>
             <Link to="/login" className="text-decorator-none">
               <Box mx={1} className="cursor">
                 <Typography className='nav-links' variant="h4" color="inherit">
-                  logout
+                  Sair
                 </Typography>
               </Box>
             </Link>
