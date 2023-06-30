@@ -32,7 +32,7 @@ function App() {
             <Route path="/contato" element={<Contato />} />
             <Route path="/sobre" element={<Sobre />} />
             <Route path="/home" element={<Home />} />
-            <Route path="/cadastrousuario" element={<CadastroUsuario />} />
+            <Route path="/cadastro" element={<CadastroUsuario />} />
             <Route path="/temas" element={<ListaTema />} />
             <Route path="/posts" element={<ListaPostagem />} />
             <Route path="/formularioPostagem" element={<CadastroPost />} />
