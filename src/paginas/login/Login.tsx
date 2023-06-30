@@ -51,10 +51,16 @@ function Login() {
 
     return (
         <Grid container direction='row' justifyContent='center' alignItems='center'>
-            <Grid alignItems='center' xs={6}>
-                <Box paddingX={20}>
-                    <form onSubmit={onSubmit}>
-                        <Typography variant='h3' gutterBottom color='textPrimary' component='h3' align='center' style={{ fontWeight: 'bold' }} className='bem-vinde'>Bem-vinde</Typography>
+            <Grid className='login' alignItems='center' xs={6}> 
+                <Box className='form-login' paddingX={10}>
+                    <Box className='logo-login'>
+                    <img
+            src="/src/assets/images/logo.png"
+            height="260px"
+          />
+                    </Box>
+                    <form className='formulario-login' onSubmit={onSubmit}>
+                        <Typography variant='h3' gutterBottom color='textPrimary' component='h3' align='center' style={{ fontWeight: 'bold' }} className='bem-vinde'>Bem-Vinde</Typography>
                         <TextField value={userLogin.usuario} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='usuario' label='Usuário' variant='outlined' name='usuario' margin='normal' fullWidth />
                         <TextField value={userLogin.senha} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='senha' label='Senha' variant='outlined' name='senha' margin='normal' type='password' fullWidth />
 
@@ -67,7 +73,6 @@ function Login() {
 
                     <Box display='flex' justifyContent='center' marginTop={2}>
                         <Box marginRight={1}>
-                            {/*gutterBottom é a margem que fica abaixo*/}
                             <Typography variant='subtitle1' gutterBottom align='center'>Ainda não tem conta?</Typography>
                         </Box>
                         <Link to='/cadastro' className='link1'>
@@ -77,11 +82,7 @@ function Login() {
                 </Box>
             </Grid>
 
-            <Grid xs={6} style={{
-                backgroundImage: `url(https://img.freepik.com/fotos-gratis/equipamentos-maos-tomada_1150-99.jpg?w=740&t=st=1687440738~exp=1687441338~hmac=1e4b714f6b45123df810698bc759ff19632b8679ac01f42912183025c06c15fb)`,
-                backgroundRepeat: 'no-repeat', width: '80vh', minHeight: '100vh', backgroundSize: 'cover', backgroundPosition: 'center'
-            }}>
-            </Grid>
+            
         </Grid>
     );
 }

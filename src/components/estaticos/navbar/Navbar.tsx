@@ -1,14 +1,26 @@
 import React from "react";
-import { AppBar, Toolbar, Typography, Box } from "@material-ui/core";
+import { AppBar, Toolbar, Typography, Box, useScrollTrigger, Slide } from "@material-ui/core";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
+
+function HideOnScroll(props: { children: React.ReactElement }) {
+  const { children } = props;
+  const trigger = useScrollTrigger();
+
+  return (
+    <Slide appear={false} direction="down" in={!trigger}>
+      {children}
+    </Slide>
+  );
+}
 
 
 function navbar() {
     return (
 
         <>
-        <AppBar  className="nav" position="static">
+        <HideOnScroll>
+        <AppBar  className="nav" position="sticky">
         <Toolbar variant="dense">
           <Box className="cursor">
             <img className='logo' src="src/assets/images/logo.png"/>
@@ -55,6 +67,7 @@ function navbar() {
           </Box>
         </Toolbar>
       </AppBar>
+      </HideOnScroll>
         </>
     )
 }
