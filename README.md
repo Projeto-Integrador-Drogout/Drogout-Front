@@ -8,7 +8,7 @@ Abordamos neste projeto a ODS - Saúde e Bem-Estar, com foco em reforçar a prev
 
 
 ##  Habilidades
-Java, SpringBoot, Javascript, HTML, CSS, biblioteca React
+Java, SpringBoot, Javascript, HTML, CSS, biblioteca React.
 
 
 ## Autores
