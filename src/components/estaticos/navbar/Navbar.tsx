@@ -1,7 +1,11 @@
 import React from "react";
 import { AppBar, Toolbar, Typography, Box, useScrollTrigger, Slide } from "@material-ui/core";
 import "./Navbar.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { TokenState } from "../../../store/tokens/TokensReducer";
+import { addToken } from "../../../store/tokens/Actions";
+import { toast } from "react-toastify";
 
 function HideOnScroll(props: { children: React.ReactElement }) {
   const { children } = props;
@@ -16,60 +20,84 @@ function HideOnScroll(props: { children: React.ReactElement }) {
 
 
 function navbar() {
-    return (
 
-        <>
-        <HideOnScroll>
-        <AppBar  className="nav" position="sticky">
-        <Toolbar variant="dense">
-          <Box className="cursor">
-            <img className='logo' src="src/assets/images/logo.png"/>
-          </Box>
+  const token = useSelector<TokenState, TokenState['tokens']>((state) => state.tokens);
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
 
-          <Box display="flex" justifyContent="start">
-            <Link to="/home" className="text-decorator-none"> 
-            <Box mx={1} className="cursor">
-              <Typography className='nav-links' variant="h4" color="inherit">
-                home
-              </Typography>
-            </Box>
-            </Link>
-            <Link to="/posts" className="text-decorator-none"> 
-            <Box mx={1} className="cursor">
-              <Typography className='nav-links' variant="h4" color="inherit">
-                postagens
-              </Typography>
-            </Box>
-            </Link>
+  function goLogout() {
+    dispatch(addToken(''));
+    toast.info('Usuário deslogado', {
+      position: "top-right",
+      autoClose: 2000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: false,
+      draggable: false,
+      progress: undefined,
+      theme: "colored",
+    });
+    navigate('/login');
+  }
 
-            <Link to="/temas" className="text-decorator-none">
-            <Box mx={1} className="cursor">
-              <Typography className='nav-links' variant="h4" color="inherit">
-                temas
-              </Typography>
-            </Box>
-            </Link>
+  let navbarComponent;
 
-            <Link to="/formularioTema" className="text-decorator-none"> 
-            <Box mx={1} className="cursor">
-              <Typography className='nav-links' variant="h4" color="inherit">
-                cadastro tema
-              </Typography>
+  if (token !== '') {
+    navbarComponent = (
+      <HideOnScroll>
+        <AppBar className="nav" position="sticky">
+          <Toolbar variant="dense">
+            <Box className="cursor">
+              <img className='logo' src="src/assets/images/logo.png" />
             </Box>
-            </Link>
-            <Link to="/login" className="text-decorator-none">
-              <Box mx={1} className="cursor">
-                <Typography className='nav-links' variant="h4" color="inherit">
-                  Sair
-                </Typography>
-              </Box>
-            </Link>
-          </Box>
-        </Toolbar>
-      </AppBar>
+
+            <Box display="flex" justifyContent="start">
+              <Link to="/home" className="text-decorator-none">
+                <Box mx={1} className="cursor">
+                  <Typography className='nav-links' variant="h4" color="inherit">
+                    home
+                  </Typography>
+                </Box>
+              </Link>
+              <Link to="/posts" className="text-decorator-none">
+                <Box mx={1} className="cursor">
+                  <Typography className='nav-links' variant="h4" color="inherit">
+                    postagens
+                  </Typography>
+                </Box>
+              </Link>
+
+              <Link to="/temas" className="text-decorator-none">
+                <Box mx={1} className="cursor">
+                  <Typography className='nav-links' variant="h4" color="inherit">
+                    temas
+                  </Typography>
+                </Box>
+              </Link>
+
+              <Link to="/formularioTema" className="text-decorator-none">
+                <Box mx={1} className="cursor">
+                  <Typography className='nav-links' variant="h4" color="inherit">
+                    cadastro tema
+                  </Typography>
+                </Box>
+              </Link>
+              <Link to="/login" className="text-decorator-none">
+                <Box mx={1} className="cursor">
+                  <Typography className='nav-links' variant="h4" color="inherit">
+                    Sair
+                  </Typography>
+                </Box>
+              </Link>
+            </Box>
+          </Toolbar>
+        </AppBar>
       </HideOnScroll>
-        </>
-    )
+    );
+    
+  }
+
+  return <>{navbarComponent}</>;
 }
 
-export default navbar;
+  export default navbar;
