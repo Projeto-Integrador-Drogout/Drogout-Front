@@ -1,5 +1,8 @@
 import React from "react";
 import { Typography, Grid, Box } from "@material-ui/core";
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import GitHubIcon from "@material-ui/icons/GitHub"
+import InstagramIcon from "@material-ui/icons/Instagram";
 import "./Sobre.css";
 
 function Sobre() {
@@ -15,9 +18,9 @@ function Sobre() {
                 color="textPrimary"
                 component="h3"
                 align="center"
-                className="titulo"
+                className="titulo slide-right"
               >
-                Sobre nós!
+                Quem somos nós?
               </Typography>
               <Typography className="about">
                 Somos um grupo de Saúde e Bem-Estar, com foco em reforçar a
@@ -41,60 +44,144 @@ function Sobre() {
               src="/src/assets/images/logo.png"
               alt="Logo"
               height="500px"
-              className="logo-image"
+              className="logo-image animacao"
             />
           </Grid>
         </Grid>
       </div>
-      <Typography className="developers-title">
+      <Typography className="developers-title slide-left">
         Conheça nossa equipe:
       </Typography>
-      <div className="developers-section">
-
-
+      <div className="developers-section slide-right">
         <Grid container spacing={2} className="developers-container">
           <Grid item xs={12} sm={6} md={4}>
             <div className="developer">
               <img className="fotos" src="/src/assets/images/FotosDevs/lucas.jpg" alt="Developer 1" />
             </div>
             <Typography className="dev-text" variant="subtitle1">Lucas Pinheiro</Typography>
-            <Typography variant="body2">Cargo/Função</Typography>
+            <a 
+            href="https://www.linkedin.com/in/splucas/" 
+            target="_blank">
+              <LinkedInIcon className="redes-dev" />
+            </a>
+            <a 
+            href="https://github.com/spLusca" 
+            target="_blank">
+              <GitHubIcon className="redes-dev" />
+            </a>
+            <a 
+            href="https://www.instagram.com/l_souzaap/" 
+            target="_blank">
+              <InstagramIcon className="redes-dev" />
+            </a>
+
           </Grid>
           <Grid item xs={12} sm={6} md={4}>
             <div className="developer">
-              <img className="fotos" src="/src/assets/images/FotosDevs/exemplo.png" alt="Developer 2" />         
+              <img className="fotos" src="/src/assets/images/FotosDevs/deborah.jpg" alt="Developer 2" />
             </div>
             <Typography className="dev-text" variant="subtitle1">Deborah Pantaleão</Typography>
-            <Typography variant="body2">Cargo/Função</Typography>
+            <a 
+            href="https://www.linkedin.com/in/deborahpantaleao/" 
+            target="_blank">
+              <LinkedInIcon className="redes-dev" />
+            </a>
+            <a 
+            href="https://github.com/DehPantaleao" 
+            target="_blank">
+              <GitHubIcon className="redes-dev" />
+            </a>
+            <a 
+            href="https://instagram.com" 
+            target="_blank">
+              <InstagramIcon className="redes-dev" />
+            </a>
           </Grid>
           <Grid item xs={12} sm={6} md={4}>
             <div className="developer">
               <img className="fotos" src="/src/assets/images/FotosDevs/samuel.jpg" alt="Developer 3" />
-              
+
             </div>
             <Typography className="dev-text" variant="subtitle1">Samuel Souza</Typography>
-            <Typography variant="body2">Cargo/Função</Typography>
+            <a 
+            href="https://www.linkedin.com/in/samuel-souza-marques-1045b0274/" 
+            target="_blank">
+              <LinkedInIcon className="redes-dev" />
+            </a>
+            <a 
+            href="https://github.com/Samuel123n" 
+            target="_blank">
+              <GitHubIcon className="redes-dev" />
+            </a>
+            <a 
+            href="https://instagram.com" 
+            target="_blank">
+              <InstagramIcon className="redes-dev" />
+            </a>
           </Grid>
           <Grid item xs={12} sm={6} md={4}>
             <div className="developer">
-              <img className="fotos" src="/src/assets/images/FotosDevs/exemplo.png" alt="Developer 4" />              
+              <img className="fotos" src="/src/assets/images/FotosDevs/rafael.jpg" alt="Developer 4" />
             </div>
             <Typography className="dev-text" variant="subtitle1">Rafael Marques</Typography>
-            <Typography variant="body2">Cargo/Função</Typography>
+            <a 
+            href="https://www.linkedin.com/in/rafael-marques019/" 
+            target="_blank">
+              <LinkedInIcon className="redes-dev" />
+            </a>
+            <a 
+            href="https://github.com/dysrrafaa" 
+            target="_blank">
+              <GitHubIcon className="redes-dev" />
+            </a>
+            <a 
+            href="https://instagram.com" 
+            target="_blank">
+              <InstagramIcon className="redes-dev" />
+            </a>
           </Grid>
           <Grid item xs={12} sm={6} md={4}>
             <div className="developer">
-              <img className="fotos" src="/src/assets/images/FotosDevs/exemplo.png" alt="Developer 5" />    
+              <img className="fotos" src="/src/assets/images/FotosDevs/caique.jpg" alt="Developer 5" />
             </div>
             <Typography className="dev-text" variant="subtitle1">Caique Ramos</Typography>
-            <Typography variant="body2">Cargo/Função</Typography>
+            <a 
+            href="https://www.linkedin.com/in/caique-ramos-22b398192/" 
+            target="_blank">
+              <LinkedInIcon className="redes-dev" />
+            </a>
+            <a 
+            href="https://github.com/caique0299" 
+            target="_blank">
+              <GitHubIcon className="redes-dev" />
+            </a>
+            <a 
+            href="https://instagram.com" 
+            target="_blank">
+              <InstagramIcon className="redes-dev" />
+            </a>
           </Grid>
           <Grid item xs={12} sm={6} md={4}>
             <div className="developer">
               <img className="fotos" src="/src/assets/images/FotosDevs/cinthia.png" alt="Developer 6" />
             </div>
             <Typography className="dev-text" variant="subtitle1">Cinthia Caroline</Typography>
-            <Typography variant="body2">Cargo/Função</Typography>
+            <a 
+            href="https://www.linkedin.com/in/cinthia-caroline-479173276/" 
+            target="_blank">
+              <LinkedInIcon className="redes-dev" />
+            </a>
+            <a 
+            href="https://github.com/cinthia40"
+            target="_blank">
+              <GitHubIcon className="redes-dev" />
+            </a>
+            <a 
+            href="https://instagram.com" 
+            target="_blank">
+              <InstagramIcon className="redes-dev" />
+            </a>
+
           </Grid>
         </Grid>
       </div>

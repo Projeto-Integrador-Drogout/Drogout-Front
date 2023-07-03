@@ -15,26 +15,26 @@
       transform: translateX(0);
     }
   }
-  
-  @keyframes scaleIn {
-    0% {
-      transform: scale(0.8);
+
+  @keyframes slideOut {
+    from {
+      transform: translateX(30px); 
     }
-    100% {
-      transform: scale(1);
+    to {
+      transform: translateX(0);
     }
   }
   
-  .titulo {
+  .slide-right {
     animation: slideIn 1s ease-in-out;
   }
   
   .about {
-    animation: slideIn 1s ease-in-out;
+    animation: slideIn 2s ease-in-out;
   }
   
-  .animacao {
-    animation: scaleIn 0.5s ease-in-out;
+  .slide-left {
+    animation: slideOut 1s ease-in-out;
   }
 
 .about {
@@ -82,9 +82,21 @@
   }
 
   .dev-text {
-    font-size: 20px !important;
+    font-size: 25px !important;
     font-weight: bold !important;
     font-family: 'Anton', sans-serif !important;
     letter-spacing: 2px !important;
     
   }
+
+.redes-dev {
+  font-size: 40px !important;
+  margin-right: 20px;
+  text-decorator: none;
+  color: black !important;
+  transition: transform 0.3s ease-in-out !important;
+}
+
+.redes-dev:hover {
+  transform: scale(1.2); /* Aumenta o tamanho em 20% */
+}

@@ -30,7 +30,7 @@ function Home() {
         direction="row"
         justifyContent="center"
         alignItems="center"
-        className="caixa"
+        className="caixa slide-right"
       >
         <Grid alignItems="center" item xs={6}>
           <Box paddingX={10}>
