@@ -46,12 +46,15 @@ function navbar() {
     navbarComponent = (
       <HideOnScroll>
         <AppBar className="nav" position="sticky">
-          <Toolbar variant="dense">
-            <Box className="cursor">
+        <Box display="flex" justifyContent="flex-start" className="navbar-logo">
               <img className='logo' src="src/assets/images/logo.png" />
             </Box>
+        <Toolbar variant="dense" className="navbar-toolbar">
+        <Box display="flex" alignItems="center" className="navbar-content">
+           
 
-            <Box display="flex" justifyContent="start">
+            <Box display="flex" justifyContent="center" flex="1" className="navbar-links">
+
               <Link to="/home" className="text-decorator-none">
                 <Box mx={1} className="cursor">
                   <Typography className='nav-links' variant="h4" color="inherit">
@@ -89,6 +92,7 @@ function navbar() {
                   </Typography>
                 </Box>
               </Link>
+            </Box>
             </Box>
           </Toolbar>
         </AppBar>

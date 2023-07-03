@@ -7,7 +7,7 @@ import { useSelector } from 'react-redux';
 import { TokenState } from '../../store/tokens/TokensReducer';
 import { Link } from "react-router-dom";
 import ModalPostagem from "../../components/postagens/modalPostagem/ModalPostagem";
-
+import TabPostagem from "../../components/postagens/tabpostagem/TabPostagem";
 
 function Home() {
 
@@ -68,7 +68,7 @@ function Home() {
             height="500px"
           />
         </Grid>
-        <Grid xs={12} className="postagens"></Grid>
+        <Grid xs={12} className="postagens"><TabPostagem/></Grid>
       </Grid>
     </>
 

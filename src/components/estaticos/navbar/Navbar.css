@@ -17,8 +17,25 @@
   height: 100px;
   padding: 10px 40px 10px 10px;
   filter: invert(100%);
+  
 }
 
 .nav-links {
   font-family: 'Bebas Neue', sans-serif !important;
+}
+.navbar-toolbar {
+  justify-content: center;
+}
+
+.navbar-content {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-links {
+  justify-content: center;
+  
+}
+.navbar-logo{
+  justify-content: flex-start;
 }
