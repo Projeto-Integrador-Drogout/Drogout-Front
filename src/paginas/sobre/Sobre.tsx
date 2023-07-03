@@ -54,11 +54,12 @@ function Sobre() {
       </Typography>
       <div className="developers-section slide-right">
         <Grid container spacing={2} className="developers-container">
-          <Grid item xs={12} sm={6} md={4}>
+          <Grid className="dev-align" item xs={6} sm={2} md={4}>
             <div className="developer">
               <img className="fotos" src="/src/assets/images/FotosDevs/lucas.jpg" alt="Developer 1" />
             </div>
             <Typography className="dev-text" variant="subtitle1">Lucas Pinheiro</Typography>
+            <div className='social-link'>
             <a 
             href="https://www.linkedin.com/in/splucas/" 
             target="_blank">
@@ -74,13 +75,14 @@ function Sobre() {
             target="_blank">
               <InstagramIcon className="redes-dev" />
             </a>
-
+</div>
           </Grid>
-          <Grid item xs={12} sm={6} md={4}>
+          <Grid className="dev-align" item xs={6} sm={2} md={4}>
             <div className="developer">
               <img className="fotos" src="/src/assets/images/FotosDevs/deborah.jpg" alt="Developer 2" />
             </div>
             <Typography className="dev-text" variant="subtitle1">Deborah Pantaleão</Typography>
+            <div className='social-link'>
             <a 
             href="https://www.linkedin.com/in/deborahpantaleao/" 
             target="_blank">
@@ -96,13 +98,15 @@ function Sobre() {
             target="_blank">
               <InstagramIcon className="redes-dev" />
             </a>
+            </div>
           </Grid>
-          <Grid item xs={12} sm={6} md={4}>
+          <Grid className="dev-align" item xs={6} sm={2} md={4}>
             <div className="developer">
               <img className="fotos" src="/src/assets/images/FotosDevs/samuel.jpg" alt="Developer 3" />
 
             </div>
             <Typography className="dev-text" variant="subtitle1">Samuel Souza</Typography>
+            <div className='social-link'>
             <a 
             href="https://www.linkedin.com/in/samuel-souza-marques-1045b0274/" 
             target="_blank">
@@ -118,12 +122,14 @@ function Sobre() {
             target="_blank">
               <InstagramIcon className="redes-dev" />
             </a>
+            </div>
           </Grid>
-          <Grid item xs={12} sm={6} md={4}>
+          <Grid className="dev-align" item xs={6} sm={2} md={4}>
             <div className="developer">
               <img className="fotos" src="/src/assets/images/FotosDevs/rafael.jpg" alt="Developer 4" />
             </div>
             <Typography className="dev-text" variant="subtitle1">Rafael Marques</Typography>
+            <div className='social-link'>
             <a 
             href="https://www.linkedin.com/in/rafael-marques019/" 
             target="_blank">
@@ -139,12 +145,14 @@ function Sobre() {
             target="_blank">
               <InstagramIcon className="redes-dev" />
             </a>
+            </div>
           </Grid>
-          <Grid item xs={12} sm={6} md={4}>
+          <Grid className="dev-align" item xs={6} sm={2} md={4}>
             <div className="developer">
               <img className="fotos" src="/src/assets/images/FotosDevs/caique.jpg" alt="Developer 5" />
             </div>
             <Typography className="dev-text" variant="subtitle1">Caique Ramos</Typography>
+            <div className='social-link'>
             <a 
             href="https://www.linkedin.com/in/caique-ramos-22b398192/" 
             target="_blank">
@@ -160,12 +168,14 @@ function Sobre() {
             target="_blank">
               <InstagramIcon className="redes-dev" />
             </a>
+            </div>
           </Grid>
-          <Grid item xs={12} sm={6} md={4}>
+          <Grid className="dev-align" item xs={6} sm={2} md={4}>
             <div className="developer">
               <img className="fotos" src="/src/assets/images/FotosDevs/cinthia.png" alt="Developer 6" />
             </div>
             <Typography className="dev-text" variant="subtitle1">Cinthia Caroline</Typography>
+            <div className='social-link'>
             <a 
             href="https://www.linkedin.com/in/cinthia-caroline-479173276/" 
             target="_blank">
@@ -181,7 +191,7 @@ function Sobre() {
             target="_blank">
               <InstagramIcon className="redes-dev" />
             </a>
-
+                  </div>
           </Grid>
         </Grid>
       </div>
