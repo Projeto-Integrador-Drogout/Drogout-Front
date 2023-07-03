@@ -54,12 +54,12 @@ function Home() {
           <Box display="flex" justifyContent="center">
             <Box marginRight={1}>
             <ModalPostagem/>
+            </Box>
             <Link to="/posts"> 
             <Button variant="outlined" className="botao">
               Ver Postagens
             </Button>
             </Link>
-          </Box>
           </Box>
         </Grid>
         <Grid item xs={6}>

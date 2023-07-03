@@ -8,33 +8,31 @@ import UserLogin from '../../models/UserLogin'
 import { useDispatch } from 'react-redux';
 import { addToken } from "../../store/tokens/Actions";
 import './Login.css';
+import { toast } from 'react-toastify';
 
 function Login() {
-
     let navigate = useNavigate();
     const dispatch = useDispatch();
-
-    const [token, setToken] = useState('')
+    const [token, setToken] = useState('');
     const [userLogin, setUserLogin] = useState<UserLogin>(
         {
             id: 0,
             usuario: '',
             senha: '',
             token: ''
-        })
+        }
+    )
 
     function updatedModel(e: ChangeEvent<HTMLInputElement>) {
-
         setUserLogin({
             ...userLogin,
             [e.target.name]: e.target.value
         })
-        console.log(JSON.stringify(userLogin))
     }
 
     useEffect(() => {
         if (token != '') {
-            dispatch(addToken(token));
+            dispatch(addToken(token))
             navigate('/home')
         }
     }, [token])
@@ -43,9 +41,27 @@ function Login() {
         e.preventDefault();
         try {
             await login(`usuarios/logar`, userLogin, setToken)
-            alert('Usuário logado com sucesso!');
+            toast.success('Usuário logado com sucesso!', {
+                position: "top-right",
+                autoClose: 2000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: false,
+                draggable: false,
+                theme: "colored",
+                progress: undefined,
+                });
         } catch (error) {
-            alert('Dados do usuário inconsistentes. Erro ao logar!');
+            toast.error('Dados do usuário inconsistentes. Erro ao logar!', {
+                position: "top-right",
+                autoClose: 2000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: false,
+                draggable: false,
+                theme: "colored",
+                progress: undefined,
+                });
         }
     }
 
