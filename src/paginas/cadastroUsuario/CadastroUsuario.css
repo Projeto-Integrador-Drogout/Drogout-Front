@@ -8,7 +8,8 @@
 }
 
 .textos2{
-    font-weight: bold !important;
+    font-family: 'Anton', sans-serif !important;
+    text-transform: uppercase;
 }
 
 .btnCancelar{
@@ -20,4 +21,14 @@
 .btnCadastrar {
     background: rgb(0, 0, 105) !important;
     color: white !important;
+}
+
+.form-cadastro {
+    margin-top: 100px;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    border: 2px solid black;
+    box-shadow: 1px 1px 3px black;
+    
 }

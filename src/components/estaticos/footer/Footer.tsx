@@ -7,6 +7,7 @@ import { Box } from "@mui/material";
 import { useSelector } from "react-redux";
 import { TokenState } from "../../../store/tokens/TokensReducer";
 import "./Footer.css";
+import {Link} from "react-router-dom";
 
 function footer() {
     const token = useSelector<TokenState, TokenState["tokens"]>(
@@ -37,28 +38,14 @@ function footer() {
                 gutterBottom
                 className="textos"
               >
-                Siga-nos nas redes sociais
+                sobre nós
               </Typography>
             </Box>
             <Box display="flex" alignItems="center" justifyContent="center">
-              <a
-                href="https://www.facebook.com/generationbrasil"
-                target="_blank"
-              >
-                <FacebookIcon className="redes" />
-              </a>
-              <a
-                href="https://www.instagram.com/generationbrasil/"
-                target="_blank"
-              >
-                <InstagramIcon className="redes" />
-              </a>
-              <a
-                href="https://www.linkedin.com/school/generationbrasil/"
-                target="_blank"
-              >
-                <LinkedInIcon className="redes" />
-              </a>
+            <Link to="/sobre" className="text-decorator-none sobre-icon">
+                 <img src="/src/assets/images/sobre.png" width="40%" />
+                 <span className="tooltip-text">Conheça nossa equipe</span>
+              </Link>
             </Box>
           </Box>
           <Box className="box2">

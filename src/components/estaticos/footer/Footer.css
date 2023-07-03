@@ -19,3 +19,34 @@
   color: white;
   font-family: 'Bebas Neue', sans-serif !important;
 }
+
+.sobre-icon {
+  filter: invert(100%);
+  display:flex;
+  justify-content: center;
+  transition: transform 0.1s ease-in-out !important;
+}
+.tooltip-text {
+  visibility: hidden;
+  background-color: #333;
+  color: #fff;
+  opacity: 75%;
+  text-align: center;
+  padding: 5px;
+  border-radius: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150px;
+  font-family: 'Anton', sans-serif !important;
+}
+
+.sobre-icon:hover .tooltip-text {
+  visibility: visible;
+}
+
+.sobre-icon:hover {
+  transform: scale(1.1);
+}

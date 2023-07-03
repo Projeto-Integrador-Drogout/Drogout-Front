@@ -66,7 +66,7 @@ function Login() {
     }
 
     return (
-        <Grid container direction='row' justifyContent='center' alignItems='center'>
+        <Grid container direction='row' justifyContent='center' alignItems='center' className='login-page'>    
             <Grid className='login' alignItems='center' xs={6}> 
                 <Box className='form-login' paddingX={10}>
                     <Box className='logo-login'>
@@ -97,8 +97,6 @@ function Login() {
                     </Box>
                 </Box>
             </Grid>
-
-            
         </Grid>
     );
 }

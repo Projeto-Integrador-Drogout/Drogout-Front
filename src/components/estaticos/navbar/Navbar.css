@@ -11,6 +11,8 @@
 
 .nav {
   background-color: #d73340ff !important;
+  flex-direction: row !important;
+  justify-content: center !important;
 }
 
 .logo {
@@ -38,4 +40,6 @@
 }
 .navbar-logo{
   justify-content: flex-start;
+  position: relative;
+  z-index: 1200;
 }

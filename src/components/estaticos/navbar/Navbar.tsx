@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/rules-of-hooks */
 import React from "react";
 import { AppBar, Toolbar, Typography, Box, useScrollTrigger, Slide } from "@material-ui/core";
 import "./Navbar.css";
@@ -44,64 +45,68 @@ function navbar() {
 
   if (token !== '') {
     navbarComponent = (
-      <HideOnScroll>
-        <AppBar className="nav" position="sticky">
+      <Box display="flex" justifyContent="space-between">
         <Box display="flex" justifyContent="flex-start" className="navbar-logo">
-              <img className='logo' src="src/assets/images/logo.png" />
-            </Box>
-        <Toolbar variant="dense" className="navbar-toolbar">
-        <Box display="flex" alignItems="center" className="navbar-content">
-           
+          <img className='logo' src="src/assets/images/logo.png" />
+        </Box>
+        <HideOnScroll>
 
-            <Box display="flex" justifyContent="center" flex="1" className="navbar-links">
+          <AppBar className="nav" position="sticky">
 
-              <Link to="/home" className="text-decorator-none">
-                <Box mx={1} className="cursor">
-                  <Typography className='nav-links' variant="h4" color="inherit">
-                    home
-                  </Typography>
-                </Box>
-              </Link>
-              <Link to="/posts" className="text-decorator-none">
-                <Box mx={1} className="cursor">
-                  <Typography className='nav-links' variant="h4" color="inherit">
-                    postagens
-                  </Typography>
-                </Box>
-              </Link>
+            <Toolbar variant="dense" className="navbar-toolbar">
+              <Box display="flex" alignItems="center" className="navbar-content">
 
-              <Link to="/temas" className="text-decorator-none">
-                <Box mx={1} className="cursor">
-                  <Typography className='nav-links' variant="h4" color="inherit">
-                    temas
-                  </Typography>
-                </Box>
-              </Link>
 
-              <Link to="/formularioTema" className="text-decorator-none">
-                <Box mx={1} className="cursor">
-                  <Typography className='nav-links' variant="h4" color="inherit">
-                    cadastro tema
-                  </Typography>
+                <Box display="flex" justifyContent="center" flex="1" className="navbar-links">
+
+                  <Link to="/home" className="text-decorator-none">
+                    <Box mx={1} className="cursor">
+                      <Typography className='nav-links' variant="h4" color="inherit">
+                        home
+                      </Typography>
+                    </Box>
+                  </Link>
+                  <Link to="/posts" className="text-decorator-none">
+                    <Box mx={1} className="cursor">
+                      <Typography className='nav-links' variant="h4" color="inherit">
+                        postagens
+                      </Typography>
+                    </Box>
+                  </Link>
+
+                  <Link to="/temas" className="text-decorator-none">
+                    <Box mx={1} className="cursor">
+                      <Typography className='nav-links' variant="h4" color="inherit">
+                        temas
+                      </Typography>
+                    </Box>
+                  </Link>
+
+                  <Link to="/formularioTema" className="text-decorator-none">
+                    <Box mx={1} className="cursor">
+                      <Typography className='nav-links' variant="h4" color="inherit">
+                        cadastro tema
+                      </Typography>
+                    </Box>
+                  </Link>
+                  <Link to="/login" className="text-decorator-none">
+                    <Box mx={1} className="cursor" onClick={goLogout}>
+                      <Typography className='nav-links' variant="h4" color="inherit">
+                        Sair
+                      </Typography>
+                    </Box>
+                  </Link>
                 </Box>
-              </Link>
-              <Link to="/login" className="text-decorator-none">
-                <Box mx={1} className="cursor">
-                  <Typography className='nav-links' variant="h4" color="inherit">
-                    Sair
-                  </Typography>
-                </Box>
-              </Link>
-            </Box>
-            </Box>
-          </Toolbar>
-        </AppBar>
-      </HideOnScroll>
+              </Box>
+            </Toolbar>
+          </AppBar>
+        </HideOnScroll>
+      </Box>
     );
-    
+
   }
 
   return <>{navbarComponent}</>;
 }
 
-  export default navbar;
+export default navbar;

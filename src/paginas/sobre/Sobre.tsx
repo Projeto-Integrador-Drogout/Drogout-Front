@@ -1,15 +1,20 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { Typography, Grid, Box } from "@material-ui/core";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import GitHubIcon from "@material-ui/icons/GitHub"
-import InstagramIcon from "@material-ui/icons/Instagram";
 import "./Sobre.css";
 
+
 function Sobre() {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
-      <div className="caixa">
-        <Grid container justifyContent="center" alignItems="center">
+      <div className="caixa-sobre">
+        <Grid container alignItems="center">
           <Grid item xs={12} md={6}>
             <Box paddingX={10}>
               <Typography
@@ -39,12 +44,11 @@ function Sobre() {
               </Typography>
             </Box>
           </Grid>
-          <Grid item xs={12} md={6}>
+          <Grid item xs={6} sm={2} md={4}>
             <img
               src="/src/assets/images/logo.png"
               alt="Logo"
-              height="500px"
-              className="logo-image animacao"
+              className="logo-image slide-left"
             />
           </Grid>
         </Grid>
@@ -70,11 +74,7 @@ function Sobre() {
             target="_blank">
               <GitHubIcon className="redes-dev" />
             </a>
-            <a 
-            href="https://www.instagram.com/l_souzaap/" 
-            target="_blank">
-              <InstagramIcon className="redes-dev" />
-            </a>
+           
 </div>
           </Grid>
           <Grid className="dev-align" item xs={6} sm={2} md={4}>
@@ -93,11 +93,7 @@ function Sobre() {
             target="_blank">
               <GitHubIcon className="redes-dev" />
             </a>
-            <a 
-            href="https://instagram.com" 
-            target="_blank">
-              <InstagramIcon className="redes-dev" />
-            </a>
+           
             </div>
           </Grid>
           <Grid className="dev-align" item xs={6} sm={2} md={4}>
@@ -117,11 +113,7 @@ function Sobre() {
             target="_blank">
               <GitHubIcon className="redes-dev" />
             </a>
-            <a 
-            href="https://instagram.com" 
-            target="_blank">
-              <InstagramIcon className="redes-dev" />
-            </a>
+
             </div>
           </Grid>
           <Grid className="dev-align" item xs={6} sm={2} md={4}>
@@ -140,11 +132,7 @@ function Sobre() {
             target="_blank">
               <GitHubIcon className="redes-dev" />
             </a>
-            <a 
-            href="https://instagram.com" 
-            target="_blank">
-              <InstagramIcon className="redes-dev" />
-            </a>
+           
             </div>
           </Grid>
           <Grid className="dev-align" item xs={6} sm={2} md={4}>
@@ -163,11 +151,7 @@ function Sobre() {
             target="_blank">
               <GitHubIcon className="redes-dev" />
             </a>
-            <a 
-            href="https://instagram.com" 
-            target="_blank">
-              <InstagramIcon className="redes-dev" />
-            </a>
+            
             </div>
           </Grid>
           <Grid className="dev-align" item xs={6} sm={2} md={4}>
@@ -186,11 +170,7 @@ function Sobre() {
             target="_blank">
               <GitHubIcon className="redes-dev" />
             </a>
-            <a 
-            href="https://instagram.com" 
-            target="_blank">
-              <InstagramIcon className="redes-dev" />
-            </a>
+           
                   </div>
           </Grid>
         </Grid>
@@ -200,5 +180,8 @@ function Sobre() {
     </>
   );
 }
+
+
+
 
 export default Sobre;

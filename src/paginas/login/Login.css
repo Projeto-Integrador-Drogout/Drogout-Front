@@ -1,8 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
+
 .text-decorator-none{
     text-decoration: none;
 }
+
+.login-page {
+    background-image: url(https://img.freepik.com/fotos-gratis/equipamentos-maos-tomada_1150-99.jpg?w=740&t=st=1687440738~exp=1687441338~hmac=1e4b714f6b45123df810698bc759ff19632b8679ac01f42912183025c06c15fb);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+  }
+  
 
 .botao-logar {
     background: #d73340ff !important;
@@ -19,6 +29,7 @@
 
 .link1 {
     color: #d73340ff;
+    text-shadow:1px 1px 3px black;
 }
 
 a.link1:hover {
@@ -31,11 +42,11 @@ a.link1:hover {
 
 .form-login {
     margin-top: 100px;
-    background: #f0f0f0;
     padding: 30px;
     border-radius: 10px;
-    border: 2px solid #ccc;
-    box-shadow: 1px 1px 3px #ccc;
+    border: 2px solid black;
+    box-shadow: 1px 1px 3px black;
+    backdrop-filter: blur(10px);
 }
 
 .logo-login {

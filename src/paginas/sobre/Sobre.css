@@ -37,6 +37,11 @@
     animation: slideOut 1s ease-in-out;
   }
 
+  .logo-image {
+    width: 350px;
+    margin-left: 250px;
+  }
+
 .about {
     color: #090c02ff;
     font-size: 15px;
@@ -99,7 +104,7 @@
 }
 
 .redes-dev:hover {
-  transform: scale(1.2); /* Aumenta o tamanho em 20% */
+  transform: scale(1.2);
 }
 
 .developers-container {
@@ -117,4 +122,9 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 20px;
+}
+
+.caixa-sobre {
+  background-color: #f3e8e2ff;
+  padding: 20px;
 }
