@@ -46,7 +46,7 @@ function Sobre() {
           </Grid>
           <Grid item xs={6} sm={2} md={4}>
             <img
-              src="/src/assets/images/logo.png"
+              src="/src/assets/images/time.png"
               alt="Logo"
               className="logo-image slide-left"
             />

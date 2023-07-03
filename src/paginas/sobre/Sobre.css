@@ -38,8 +38,8 @@
   }
 
   .logo-image {
-    width: 350px;
-    margin-left: 250px;
+    width: 600px;
+    margin-left: 100px;
   }
 
 .about {
@@ -125,6 +125,9 @@
 }
 
 .caixa-sobre {
-  background-color: #f3e8e2ff;
+ 
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
   padding: 20px;
 }
