@@ -3,7 +3,13 @@ import { Typography, Grid, Box } from "@material-ui/core";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import GitHubIcon from "@material-ui/icons/GitHub"
 import "./Sobre.css";
-
+import time from '../../assets/images/time.png';
+import lucas from '../../assets/images/FotosDevs/lucas.jpg';
+import deborah from '../../assets/images/FotosDevs/deborah.jpg';
+import samuel from '../../assets/images/FotosDevs/samuel.jpg';
+import rafael from '../../assets/images/FotosDevs/rafael.jpg';
+import caique from '../../assets/images/FotosDevs/caique.jpg';
+import cinthia from '../../assets/images/FotosDevs/cinthia.png';
 
 function Sobre() {
 
@@ -46,8 +52,8 @@ function Sobre() {
           </Grid>
           <Grid item xs={6} sm={2} md={4}>
             <img
-              src="/src/assets/images/time.png"
-              alt="Logo"
+              src={time}
+              alt="imagem sobre"
               className="logo-image slide-left"
             />
           </Grid>
@@ -60,7 +66,7 @@ function Sobre() {
         <Grid container spacing={2} className="developers-container">
           <Grid className="dev-align" item xs={6} sm={2} md={4}>
             <div className="developer">
-              <img className="fotos" src="/src/assets/images/FotosDevs/lucas.jpg" alt="Developer 1" />
+              <img className="fotos" src={lucas} alt="Developer 1" />
             </div>
             <Typography className="dev-text" variant="subtitle1">Lucas Pinheiro</Typography>
             <div className='social-link'>
@@ -79,7 +85,7 @@ function Sobre() {
           </Grid>
           <Grid className="dev-align" item xs={6} sm={2} md={4}>
             <div className="developer">
-              <img className="fotos" src="/src/assets/images/FotosDevs/deborah.jpg" alt="Developer 2" />
+              <img className="fotos" src={deborah} alt="Developer 2" />
             </div>
             <Typography className="dev-text" variant="subtitle1">Deborah Pantaleão</Typography>
             <div className='social-link'>
@@ -98,7 +104,7 @@ function Sobre() {
           </Grid>
           <Grid className="dev-align" item xs={6} sm={2} md={4}>
             <div className="developer">
-              <img className="fotos" src="/src/assets/images/FotosDevs/samuel.jpg" alt="Developer 3" />
+              <img className="fotos" src={samuel} alt="Developer 3" />
 
             </div>
             <Typography className="dev-text" variant="subtitle1">Samuel Souza</Typography>
@@ -118,7 +124,7 @@ function Sobre() {
           </Grid>
           <Grid className="dev-align" item xs={6} sm={2} md={4}>
             <div className="developer">
-              <img className="fotos" src="/src/assets/images/FotosDevs/rafael.jpg" alt="Developer 4" />
+              <img className="fotos" src={rafael} alt="Developer 4" />
             </div>
             <Typography className="dev-text" variant="subtitle1">Rafael Marques</Typography>
             <div className='social-link'>
@@ -137,7 +143,7 @@ function Sobre() {
           </Grid>
           <Grid className="dev-align" item xs={6} sm={2} md={4}>
             <div className="developer">
-              <img className="fotos" src="/src/assets/images/FotosDevs/caique.jpg" alt="Developer 5" />
+              <img className="fotos" src={caique} alt="Developer 5" />
             </div>
             <Typography className="dev-text" variant="subtitle1">Caique Ramos</Typography>
             <div className='social-link'>
@@ -156,7 +162,7 @@ function Sobre() {
           </Grid>
           <Grid className="dev-align" item xs={6} sm={2} md={4}>
             <div className="developer">
-              <img className="fotos" src="/src/assets/images/FotosDevs/cinthia.png" alt="Developer 6" />
+              <img className="fotos" src={cinthia} alt="Developer 6" />
             </div>
             <Typography className="dev-text" variant="subtitle1">Cinthia Caroline</Typography>
             <div className='social-link'>

@@ -9,6 +9,7 @@ import { useDispatch } from 'react-redux';
 import { addToken } from "../../store/tokens/Actions";
 import './Login.css';
 import { toast } from 'react-toastify';
+import logo from '../../assets/images/logo.png'
 
 function Login() {
     let navigate = useNavigate();
@@ -71,7 +72,7 @@ function Login() {
                 <Box className='form-login' paddingX={10}>
                     <Box className='logo-login'>
                     <img
-            src="/src/assets/images/logo.png"
+            src={logo}
             height="260px"
           />
                     </Box>

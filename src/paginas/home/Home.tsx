@@ -8,6 +8,7 @@ import { TokenState } from '../../store/tokens/TokensReducer';
 import { Link } from "react-router-dom";
 import ModalPostagem from "../../components/postagens/modalPostagem/ModalPostagem";
 import TabPostagem from "../../components/postagens/tabpostagem/TabPostagem";
+import logo from '../../assets/images/logo.png'
 
 function Home() {
 
@@ -64,7 +65,7 @@ function Home() {
         </Grid>
         <Grid item xs={6}>
           <img
-            src="/src/assets/images/logo.png"
+            src={logo}
             height="500px"
           />
         </Grid>
