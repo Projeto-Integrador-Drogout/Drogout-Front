@@ -44,7 +44,7 @@ function footer() {
             </Box>
             <Box display="flex" alignItems="center" justifyContent="center">
             <Link to="/sobre" className="text-decorator-none sobre-icon">
-                 <img src={sobre} width="40%" />
+                 <img src={sobrelogo} width="40%" />
                  <span className="tooltip-text">Conheça nossa equipe</span>
               </Link>
             </Box>
