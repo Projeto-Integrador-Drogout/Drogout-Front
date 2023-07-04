@@ -1,4 +1,3 @@
-/* eslint-disable react-hooks/rules-of-hooks */
 import React from "react";
 import { AppBar, Toolbar, Typography, Box, useScrollTrigger, Slide } from "@material-ui/core";
 import "./Navbar.css";
@@ -7,6 +6,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { TokenState } from "../../../store/tokens/TokensReducer";
 import { addToken } from "../../../store/tokens/Actions";
 import { toast } from "react-toastify";
+import { logo1 } from '../../../assets/images/logo.png'
 
 function HideOnScroll(props: { children: React.ReactElement }) {
   const { children } = props;
@@ -47,7 +47,7 @@ function navbar() {
     navbarComponent = (
       <Box display="flex" justifyContent="space-between">
         <Box display="flex" justifyContent="flex-start" className="navbar-logo">
-          <img className='logo' src="src/assets/images/logo.png" />
+          <img className='logo' src= {logo1} />
         </Box>
         <HideOnScroll>
 

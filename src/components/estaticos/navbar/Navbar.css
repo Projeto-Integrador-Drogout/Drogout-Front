@@ -25,6 +25,10 @@
 .nav-links {
   font-family: 'Bebas Neue', sans-serif !important;
 }
+
+.nav-links:hover {
+  color: black;
+}
 .navbar-toolbar {
   justify-content: center;
 }
