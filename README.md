@@ -10,7 +10,7 @@ Outras tecnologias: Spring Tool Suite 4, IntelliJ Idea, VSCode, Git/GitHub.
 ## Autores
 - [Caique Ramos](https://github.com/caique0299)
 - [Cinthia Caroline](https://github.com/cinthia40)
-- [Deborah Pantaleão](https://github.com/spLusca)
+- [Deborah Pantaleão](https://github.com/DehPantaleao)
 - [Rafael Marques](https://github.com/dysrrafaa)
 - [Lucas Pinheiro](https://github.com/spLusca)
 - [Samuel Marques](https://github.com/Samuel123n)
